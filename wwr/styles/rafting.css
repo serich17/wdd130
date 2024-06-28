@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary-color: rgb(23,89,222);
+    --secondary-color: #8d99ae;
+    --accent1-color: #8CD025;
+    --accent2-color: #0b1010;
+    --paragraph-font: "Open-Sans", sans-serif;
+    --heading-font: "Raleway", sans-serif;
+    --nav-background-color: #ffffff;
+    --nav-link-color: #67f248;
+    --nav-hover-link-color: #ff0000;
+    --nav-hover-background-color:#8d99ae;
+}
+
+body {
+    font-family:var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+
+}
+
+p {
+    padding: 0;
+    font-family: var(--paragraph-font);
+
+}
+
+
+.hero {
+    position: relative;
+
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    background-color: rgba(23, 89, 222, .4);
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+}
+article {
+    position: absolute;
+    top: 10rem;
+    left: 15%;
+    right: 15%;
+    background-color: rgba(141,153,174, .7);
+    width: 70%;
+    padding: 10px;
+    
+    
+}
+#happycustomer {
+    float: right;
+    width: 200px;
+}
+.sociallinks a {
+    width: 3rem;
+    margin: 0;
+    padding: 3px;
+    display: block;
+    float: left;
+}
