@@ -5,6 +5,7 @@
     --primary-color: rgb(23,89,222);
     --secondary-color: #8d99ae;
     --accent1-color: #8CD025;
+    --accent3-color: #3f6407;
     --accent2-color: #0b1010;
     --paragraph-font: "Open-Sans", sans-serif;
     --heading-font: "Raleway", sans-serif;
@@ -56,22 +57,28 @@ header img {
     padding: 20px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: var(--heading-font);
+
+h1 {
     color: var(--accent1-color);
+    font-family: var(--heading-font);
+}
+h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--accent3-color);
 
 }
 
 p {
     padding: 0;
     font-family: var(--paragraph-font);
-
+    
 }
 
 footer {
     text-align: right;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-top: 1rem;
 }
 footer p {
     text-align: right;
@@ -123,8 +130,15 @@ article {
 #happycustomer {
     float: right;
     width: 200px;
+    border-radius: 8px;
 }
 
+section {
+    background-color: rgb(231, 229, 229);
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
 
 .history {
     display: grid;
@@ -133,7 +147,6 @@ article {
     justify-content: center;
     align-content: center;
     margin-top: 20px;
-    background-color: rgb(231, 229, 229);
 }
 .history * {
     padding: 10px;
@@ -146,7 +159,7 @@ h2 {
     grid-row: 1;
     grid-column: 2;
     text-align: center;
-    padding-top: 20px;
+    font-size: 2em;
 }
 
 .history p {
@@ -167,8 +180,88 @@ figcaption {
     padding-top: 10px;
 }
 
-.adventure {
-    background-color: rgb(231, 229, 229);
-    
+
+#wireframe {
+    grid-column: 1/4;
+    text-align: center;
 }
 
+.round {
+    border-radius: 20px;
+}
+
+#contact-message {
+    text-align: center;
+    color:#0c178d;
+    font-size: 1.5em;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    font-style: italic;
+    border: 1px solid;
+    width: 250px;
+    margin: auto;
+}
+.employee {
+    background-color: rgba(231, 229, 229, .9);
+    position: absolute;
+    width: 225px;
+    height: auto;
+    top: 425px;
+    left: 40px;    
+}
+.employee p {
+    border-top: 1px dotted #000000;
+}
+.employee img {
+    max-width: 150px;
+}
+.employee * {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 1fr 3fr;
+    margin: auto;
+    grid-gap: .5rem;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 1rem;
+}
+#email {
+    margin-bottom: 2em;
+}
+
+button {
+
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 1.1em;
+    width: 200px;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .45rem;
+    font-size: 1.2rem;
+    grid-column: 1/3;
+
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+label {
+    text-align: left;
+    font-size: 1.2rem;
+}
