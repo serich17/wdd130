@@ -196,22 +196,37 @@ figcaption {
     font-size: 1.5em;
 }
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-left: 10px;
     font-style: italic;
     border: 1px solid;
     width: 250px;
     margin: auto;
 }
+#info {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-content: center;
+    }
+.grid-item {
+    margin: auto;
+}
+.flex-employee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#adventure {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    font-size: 1.1rem;
+}
 .employee {
-    background-color: rgba(231, 229, 229, .9);
-    position: absolute;
+    background-color: rgba(128, 179, 255, 0.9);
+    
     width: 225px;
     height: auto;
-    top: 425px;
-    left: 40px;    
 }
 .employee p {
     border-top: 1px dotted #000000;
@@ -227,7 +242,7 @@ figcaption {
 
 form {
     display: grid;
-    width: 400px;
+    width: 450px;
     grid-template-columns: 1fr 3fr;
     margin: auto;
     grid-gap: .5rem;
@@ -264,4 +279,16 @@ input, select, textarea {
 label {
     text-align: left;
     font-size: 1.2rem;
+}
+#radio{
+    grid-column: 1/3;
+    margin-bottom: 20px;
+}
+
+
+#subscribe {
+    width: 20px;
+}
+#checkbox {
+    grid-column: 1/3;
 }
