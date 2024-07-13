@@ -116,7 +116,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
 }
-article {
+.article {
     position: absolute;
     top: 10rem;
     left: 15%;
