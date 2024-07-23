@@ -340,3 +340,48 @@ label {
     padding: 20px;
     
 }
+
+.trips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trip-item {
+    width: 200px;
+    padding: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+#contact {
+    height: 25px;
+}
+
+#top-message {
+    width: 300px;
+    color: #fff;
+    background-color: rgba(23, 89, 222, .7);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#container {
+    width: 100%;
+    display:flex;
+    position: absolute;
+    top: 15%;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+}
